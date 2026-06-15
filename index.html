@@ -376,16 +376,18 @@
       transform: translateY(-4px);
     }
 
-    .trabajo-img {
-      width: 100%;
-      height: 200px;
-      background: var(--fondo-terciario);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(255, 255, 255, 0.3);
-      font-size: 0.9rem;
-      border-bottom: 1px solid rgba(179, 102, 255, 0.15);
+    .galeria-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .galeria-scroll::-webkit-scrollbar-track {
+      background: var(--fondo-principal);
+      border-radius: 3px;
+    }
+
+    .galeria-scroll::-webkit-scrollbar-thumb {
+      background: var(--morado-neon);
+      border-radius: 3px;
     }
 
     .trabajo-info {
@@ -891,16 +893,61 @@
     </div>
   </section>
 
+  <!-- SECCIÓN 4: TRABAJOS REALIZADOS -->
   <section class="seccion" id="trabajos">
     <div class="contenedor">
       <h2 class="titulo-seccion">Trabajos Realizados</h2>
       <div class="trabajos-grid">
-        <div class="trabajo-card"><div class="trabajo-img">Imagen — Ensamble PC Gamer</div><div class="trabajo-info"><h3>Ensamble PC Gamer</h3><p>Ryzen 7 + RTX 4060 + gabinete vidrio templado.</p></div></div>
-        <div class="trabajo-card"><div class="trabajo-img">Imagen — Optimización Windows</div><div class="trabajo-info"><h3>Optimización Windows</h3><p>Laptop lenta a sistema ágil sin formatear.</p></div></div>
-        <div class="trabajo-card"><div class="trabajo-img">Imagen — Limpieza Profunda</div><div class="trabajo-info"><h3>Limpieza Profunda</h3><p>Mantenimiento completo con cambio de pasta térmica.</p></div></div>
-        <div class="trabajo-card"><div class="trabajo-img">Imagen — Página Web</div><div class="trabajo-info"><h3>Página Web</h3><p>Landing page para emprendimiento local.</p></div></div>
-        <div class="trabajo-card"><div class="trabajo-img">Imagen — Rescate de Datos</div><div class="trabajo-info"><h3>Rescate de Datos</h3><p>Recuperación de archivos de disco duro dañado.</p></div></div>
-        <div class="trabajo-card"><div class="trabajo-img">Imagen — Windows Gaming Optimizado</div><div class="trabajo-info"><h3>Windows Gaming Optimizado</h3><p>SO configurado para máximo rendimiento en juegos.</p></div></div>
+
+        <!-- Proyecto 1: Karcher Web -->
+        <div class="trabajo-card">
+          <div style="display:flex; overflow-x:auto; height:200px; gap:4px;" class="galeria-scroll">
+            <img src="img/KWEB1.jpg" alt="Karcher Web 1" style="height:100%; border-radius:4px;">
+            <img src="img/KWEB2.jpg" alt="Karcher Web 2" style="height:100%; border-radius:4px;">
+            <img src="img/KWEB3.jpg" alt="Karcher Web 3" style="height:100%; border-radius:4px;">
+            <img src="img/KWEB4.jpg" alt="Karcher Web 4" style="height:100%; border-radius:4px;">
+            <img src="img/KWEB5.jpg" alt="Karcher Web 5" style="height:100%; border-radius:4px;">
+            <img src="img/KWEB6.jpg" alt="Karcher Web 6" style="height:100%; border-radius:4px;">
+            <img src="img/KWEB7.jpg" alt="Karcher Web 7" style="height:100%; border-radius:4px;">
+          </div>
+          <div class="trabajo-info">
+            <h3>Página Web — Karcher Center Vaden</h3>
+            <p>Sitio web profesional con sistema de cotizaciones y generación automática de PDFs para el cliente.</p>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: Mantenimiento PC Gamer -->
+        <div class="trabajo-card">
+          <div style="display:flex; overflow-x:auto; height:200px; gap:4px; align-items:center;" class="galeria-scroll">
+            <video controls style="height:100%; border-radius:4px;">
+              <source src="img/sucio1.mp4" type="video/mp4">
+            </video>
+            <video controls style="height:100%; border-radius:4px;">
+              <source src="img/limpiando2.mp4" type="video/mp4">
+            </video>
+            <img src="img/limpio1.jpg" alt="Resultado 1" style="height:100%; border-radius:4px;">
+            <img src="img/limpio2.jpg" alt="Resultado 2" style="height:100%; border-radius:4px;">
+          </div>
+          <div class="trabajo-info">
+            <h3>Mantenimiento PC Gamer</h3>
+            <p>Limpieza profunda con alcohol isopropílico, cambio de pasta térmica de alto rendimiento y optimización general del sistema.</p>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Ensamble PC Gamer -->
+        <div class="trabajo-card">
+          <div style="display:flex; overflow-x:auto; height:200px; gap:4px;" class="galeria-scroll">
+            <img src="img/frente1.jpg" alt="Frente del gabinete" style="height:100%; border-radius:4px;">
+            <img src="img/panel2.jpg" alt="Panel lateral" style="height:100%; border-radius:4px;">
+            <img src="img/r53.jpg" alt="Interior Ryzen 5" style="height:100%; border-radius:4px;">
+            <img src="img/5904.jpg" alt="RX 590 instalada" style="height:100%; border-radius:4px;">
+          </div>
+          <div class="trabajo-info">
+            <h3>Ensamble PC Gamer</h3>
+            <p>Equipo personalizado con Ryzen 5 5600G, Radeon RX 590 y gabinete XPG. Rendimiento y estética gaming.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
